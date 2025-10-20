@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bangalore Home Price Prediction | PriceSense</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="background-img"></div>
+    
+    <div class="header">
+        <div class="logo">🏠 PriceSense</div>
+        <button class="back-btn" onclick="window.location.href='landing.html'">← Back to Home</button>
+    </div>
+    
+    <div class="container">
+        <form class="glass-card" id="priceForm" autocomplete="off">
+            <h2>🏠 PriceSense</h2>
+            <p class="subtitle">Bangalore Home Price Prediction</p>
+            
+            <div class="form-group">
+                <label for="uiSqft">Area (Square Feet)</label>
+                <input class="input" type="number" id="uiSqft" min="100" max="10000" value="1000" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="uiBHK">BHK</label>
+                <select id="uiBHK" class="input">
+                    <option value="1">1</option>
+                    <option value="2" selected>2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="uiBath">Bath</label>
+                <select id="uiBath" class="input">
+                    <option value="1">1</option>
+                    <option value="2" selected>2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="uiLocations">Location</label>
+                <select id="uiLocations" class="input"></select>
+            </div>
+            
+            <button type="submit" class="btn">Estimate Price</button>
+            
+            <div class="result" id="uiEstimatedPrice"></div>
+        </form>
+    </div>
+    
+    <footer>
+        <p class="copyright">© 2025 PriceSense. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
