@@ -86,9 +86,3 @@ Visit 👉 **http://127.0.0.1:5000**
   - Normalized numerical features  
 
 ---
-
-## 🧑‍💻 Author
-
-**Harsh**  
-📍 Bengaluru, India  
-💬 Passionate about building intelligent web applications that merge **AI + real-world utility**.  
